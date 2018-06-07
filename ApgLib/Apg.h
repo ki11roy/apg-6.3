@@ -290,12 +290,10 @@ void vDefaultAlertHandler(unsigned int uiLine, const char* cpFile);
 // TOOLS
 //////////////////////////////////////////////////////////////////////////
 // non-ANSI minimum/maximum macros
-#undef min
-#undef max
 /** minimum macro - defined here because it is non-ANSI. */
-#define min(a,b) (((a) < (b)) ? (a) : (b))
+#define apg_min(a,b) (((a) < (b)) ? (a) : (b))
 /** maximum macro - defined here because it is non-ANSI. */
-#define max(a,b) (((a) > (b)) ? (a) : (b))
+#define apg_max(a,b) (((a) > (b)) ? (a) : (b))
 
 // stricmp is non-ANSI - not all CRTs support it
 /** Case-insensitive: compares two strings.

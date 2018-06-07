@@ -204,7 +204,7 @@ void* vpMemRealloc(void* vpCtx, void* vpData, apg_uint uiBytes){
         spNewCell->uiSize = uiBytes;
 
         // copy the data from old allocation to new
-        uiCopy = min(uiBytes, spOldCell->uiSize);
+        uiCopy = apg_min(uiBytes, spOldCell->uiSize);
         vpDst = (void*)(spNewCell + 1);
         vpSrc = (void*)(spOldCell + 1);
         memcpy(vpDst, vpSrc, uiCopy);

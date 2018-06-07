@@ -38,7 +38,7 @@
 //         The largest integer refers only to the grammar's data. Other Parser integer's may,
 //         and likely will, have larger requirements. Parser may fail unpredictably.
 
-static unsigned long int ulData[24541] = {
+static signed long int ulData[24541] = {
     1, 2, 196328, 1, 255, 26647, 20, 4, 17982, 5194, 23176, 1365, 24, 1457, 1481, 359, 
     0, 0, 4353, 1947, 54, 46, 51, 0, 4, 5, 1, 2, 6, 8, 9, 10, 11, 12, 13, 14, 16, 17, 
     20, 21, 24, 25, 28, 29, 30, 31, 32, 33, 34, 36, 37, 40, 41, 42, 43, 44, 53, 54, 

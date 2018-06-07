@@ -612,7 +612,7 @@ const char* cpBoolean2String(apg_uint uiBool){
 static apg_uint uiIndent(apg_uint uiIndent, char* cpBuffer, apg_uint uiBufferLen){
 	apg_uint i, uiLen = 0;
 	if(cpBuffer && uiBufferLen){
-		uiLen = min(uiIndent, uiBufferLen);
+		uiLen = apg_min(uiIndent, uiBufferLen);
 		cpBuffer[0] = 0;
 		for(i = 0; i < uiLen; i++){
 			strcat(cpBuffer, " ");

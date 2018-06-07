@@ -845,7 +845,7 @@ static void vToUpper(char* cpString, char* cpToUpper, G_UINT uiLen){
 	GASSERT(cpToUpper);
 	GASSERT(uiLen);
 	uiLen++;
-	uiLen = min(uiLen, (G_UINT)(strlen(cpString)+1));
+	uiLen = apg_min(uiLen, (G_UINT)(strlen(cpString)+1));
 	char* cpEnd = cpString + uiLen - 1;
 	for(; cpString < cpEnd; cpString++, cpToUpper++){
 		if(!isalnum(*cpString)){*cpToUpper = '_';}
